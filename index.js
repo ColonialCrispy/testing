@@ -25,7 +25,7 @@ const guildArray = client.guilds.map((guild) => {
 
 var client = new discord.Client(); 
 
-const token = secrettoken87;
+const token = process.env.token;
 
 client.on ("ready", () => {
     console.log ("rp bot ready for action"); 
@@ -1535,4 +1535,4 @@ client.on ("message", (message) => {
 
 
 
-client.login (secrettoken87);
+client.login (token);
